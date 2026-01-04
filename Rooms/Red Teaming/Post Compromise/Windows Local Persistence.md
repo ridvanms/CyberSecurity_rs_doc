@@ -121,3 +121,30 @@ reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /t REG_DW
 ```powershell
 net user thmuser2
 ```
+
+#### RID Hijacking
+Another method to gain administrative privileges without being an administrator is changing some registry values to make the operating system think you are the Administrator.
+
+When a user is created, an identifier called **Relative ID (RID)** is assigned to them. The RID is simply a numeric identifier representing the user across the system. When a user logs on, the LSASS process gets its RID from the SAM registry hive and creates an access token associated with that RID. If we can tamper with the registry value, we can make windows assign an Administrator access token to an unprivileged user by associating the same RID to both accounts.
+
+In any Windows system, the default Administrator account is assigned the **RID = 500**, and regular users usually have **RID >= 1000**.
+
+- To find the assigned RIDs for any user, you can use the following command:
+```Command Prompt
+wmic useraccount get name,sid
+```
+
+Now we only have to assign the RID=500 to thmuser3. To do so, we need to access the SAM using Regedit. The SAM is restricted to the SYSTEM account only, so even the Administrator won't be able to edit it. To run Regedit as SYSTEM, we will use psexec, available in `C:\tools\pstools` in your machine:
+
+```Command Prompt
+PsExec64.exe -i -s regedit
+```
+
+From Regedit, we will go to `HKLM\SAM\SAM\Domains\Account\Users\` where there will be a key for each user in the machine
+
+Note: the RID is stored using little-endian notation, so its bytes appear reversed.
+
+Note: using rdp to connect to the thmuser3
+```Powershell
+xfreerdp /v:MACHINE-IP /u:thmuser3 /p:Password321
+```

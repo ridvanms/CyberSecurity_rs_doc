@@ -1,2 +1,0 @@
-TASK 3: Hijacking File Associations -  we can hijack any file association to force the operating system to run a shell whenever the user opens a specific file type. 
-- finding flag 6 - THM{TXT_FILES_WOULD_NEVER_HURT_YOU}

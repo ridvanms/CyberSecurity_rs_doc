@@ -41,4 +41,12 @@ I learned:
 What to learn:
 - what are task Scheduler 
 - how to make our task invisible
-- 
+
+# Reflection 2026-01-13
+I learned:
+- What is task scheduler and how to use it to gain privileges 
+- how to create a task that runs a reverse shell every single minute
+- how to check if task is successfully created
+- where are security descriptors of all scheduled tasks in windows are hold
+What to learn:
+- moving to the next task which is Logon Triggered Persistence

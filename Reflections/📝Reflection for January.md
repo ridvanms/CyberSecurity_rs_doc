@@ -50,3 +50,10 @@ I learned:
 - where are security descriptors of all scheduled tasks in windows are hold
 What to learn:
 - moving to the next task which is Logon Triggered Persistence
+
+# Reflection 2026-01-14
+I learned:
+- How startup folders work and An attacker can achieve persistence just by dropping a payload in there
+
+What to learn:
+- Run / RunOnce (force a user to execute a program on logon via the registry)

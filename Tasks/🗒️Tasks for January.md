@@ -22,3 +22,12 @@ FLAG8-THM{IN_PLAIN_SIGHT}
 - hiding task from all eyes with deleting sd in security descriptors of all scheduled tasks
 - and then navigating to the flag from the listener and gaining the flag
 FLAG9 - THM{JUST_A_MATTER_OF_TIME}
+
+# Task 2026-01-14
+- using msfvenom to create a payload for reverseshell
+- creating local server and opening a nc listener 
+- on the victim machine though wget downloading the payload 
+- copying it to the C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp 
+- then just reconnecting to the victom and we have the revers shell on our machine
+- grabbing the flag
+FLAG10 - THM{NO_NO_AFTER_YOU}

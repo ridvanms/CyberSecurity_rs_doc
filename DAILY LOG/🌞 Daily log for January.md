@@ -5,6 +5,9 @@ From **Tryhackme** - room i learned:
 - Tampering With Unprivileged Account 
 - Backdooring Files
 - Abusing Services
+##  Lateral Movement and Pivoting
+- Spawning Processes Remotely
+- Moving Laterally using WMI
 # Reflection 
 Personal **analysis** of what I've **learned**, how it **impacted** me, and how i **might apply** it going forward:
 [[📝Reflection for January]]

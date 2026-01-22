@@ -57,3 +57,13 @@ I learned:
 
 What to learn:
 - Run / RunOnce (force a user to execute a program on logon via the registry)
+
+# Reflection 2026-01-22
+I learned:
+- How to connect to WMI From Powershell and we need to do some pre credentials creating
+- How to create Remote Process Creation using WMI
+- How to create Service Remotely with WMI
+- How to Creating Scheduled Tasks Remotely with WMI
+- How to install MSI packages through WMI
+
+

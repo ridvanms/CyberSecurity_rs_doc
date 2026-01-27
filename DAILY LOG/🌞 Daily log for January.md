@@ -8,6 +8,10 @@ From **Tryhackme** - room i learned:
 ##  Lateral Movement and Pivoting
 - Spawning Processes Remotely
 - Moving Laterally using WMI
+- Use of Alternate Authentication Material
+- Abusing User Behaviour
+- Port Forwarding
+- Conclusion
 # Reflection 
 Personal **analysis** of what I've **learned**, how it **impacted** me, and how i **might apply** it going forward:
 [[📝Reflection for January]]

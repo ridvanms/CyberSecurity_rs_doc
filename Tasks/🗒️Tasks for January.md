@@ -33,7 +33,7 @@ FLAG9 - THM{JUST_A_MATTER_OF_TIME}
 FLAG10 - THM{NO_NO_AFTER_YOU}
 
 # TASKS FROM  [[Lateral Movement and Pivoting]]
-## Task 2026-01-14
+## Task 2026-01-22
 - connecting to THMJMP2 using the credentials assigned to you on Task 1 via ssh
 - Using credentials to move laterally to THM-IIS using WMI and MSI packages
 - using SMB we copy the payload to the ADMIN$ share that  we created with msfvenom

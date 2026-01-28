@@ -42,3 +42,9 @@ FLAG10 - THM{NO_NO_AFTER_YOU}
 - Invoking the install method from the Win32_Product class to trigger the payload
 FLAG = THM{MOVING_WITH_WMI_4_FUN}
 
+# TASKS FROM [[Data Exfiltration]]
+## Task 2026-01-28
+*In which case scenario will sending and receiving traffic continue during the connection?*
+- tunneling
+*In which case scenario will sending and receiving traffic be in one direction*
+- traditional data exfiltration

@@ -66,8 +66,11 @@ I learned:
 - How to Creating Scheduled Tasks Remotely with WMI
 - How to install MSI packages through WMI
 
-Reflection 2026-01-26
+# Reflection 2026-01-28
 I learned:
-- How SSH Tunnelling works
+- primary use case scenarios of data exfiltration
+- What is Traditional Data Exfiltration
+- What are C2 Communications
+- What is Tunneling
 
 	

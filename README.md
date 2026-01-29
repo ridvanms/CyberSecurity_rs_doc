@@ -25,3 +25,5 @@ This repository contains consolidated cybersecurity notes, daily logs, project d
 ## Getting Started
 
 To explore the notes, clone this repository and open it with your preferred markdown editor, such as Obsidian.
+
+> **Disclaimer:** This repository is intended **only for learning purposes**. It contains personal notes, reflections, and documentation based on publicly available cybersecurity resources such as TryHackMe. No proprietary content, sensitive data, or exploit code is included. All information is shared for educational use and self-development.

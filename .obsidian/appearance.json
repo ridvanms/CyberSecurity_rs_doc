@@ -1,0 +1,11 @@
+{
+  "cssTheme": "Bolt",
+  "baseFontSize": 17,
+  "baseFontSizeAction": true,
+  "monospaceFontFamily": "Cascadia Code",
+  "theme": "system",
+  "nativeMenus": true,
+  "accentColor": "#729272",
+  "textFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "Coming Soon"
+}

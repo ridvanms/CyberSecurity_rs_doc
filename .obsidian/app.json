@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "tabSize": 4,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "propertiesInDocument": "source"
+}

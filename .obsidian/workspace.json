@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "3be6e4dbabe036f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bd64787cc4d1ca8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "029eae40c4815856",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rooms/RandomROOMS/AWS Security - S3cret Santa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AWS Security - S3cret Santa"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fbb8dc56458fef14",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfa8b20aa95d3886",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6207de24f067cd6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "52ed21e1aadc1733",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "rdp",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "53a329bf7d979fc5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 269.5
+  },
+  "right": {
+    "id": "60dc160925893c68",
+    "type": "split",
+    "children": [
+      {
+        "id": "00ea1488a2f70c01",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ccf869b05f281f9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TRYHACKME/JR Penetration Tester/Vulnerability Research/🐞Exploit Vulnerabilities.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 🐞Exploit Vulnerabilities"
+            }
+          },
+          {
+            "id": "72c60da6054c8f57",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "📖Tcpdump  The Basic.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 📖Tcpdump  The Basic"
+            }
+          },
+          {
+            "id": "adc991e239aba2d9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "34fc6500249bcb4d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📖Tcpdump  The Basic.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 📖Tcpdump  The Basic"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "029eae40c4815856",
+  "lastOpenFiles": [
+    "Rooms/RandomROOMS/Exploitation with cURL - Hoperation Eggsploit.md",
+    "Rooms/RandomROOMS/AWS Security - S3cret Santa.md",
+    "Rooms/RandomROOMS/n8n.md",
+    "Rooms/RedTeaming/PostCompomise/📖Lateral Movement and Pivoting.md",
+    "Concepts/Cryptography.md",
+    "Tools/nmap.md",
+    "Tools/gobuster.md",
+    "Rooms/RedTeaming/PostCompomise/📖Windows Local Persistance.md",
+    "Rooms/Cyber Security  101/Build Your Cyber Security Career/Training Impact on Teams.md",
+    "Rooms/Cyber Security  101/Build Your Cyber Security Career/Security Principles.md",
+    "Rooms/Cyber Security  101/Build Your Cyber Security Career/Careers in Cyber.md",
+    "Rooms/Cyber Security  101/Build Your Cyber Security Career/Build Your Cyber Security Career.md",
+    "Assets/Pasted image 20251112130716.png",
+    "Assets/Pasted image 20251115114642.png",
+    "Assets/Pasted image 20251223160024.png",
+    "Assets/Pasted image 20251207155149.png",
+    "Cheatsheets/gobuster.md",
+    "Untitled.base",
+    "Untitled.canvas",
+    "🌆TOP 2000 TURKISH COMMON WORDS.md",
+    "TRYHACKME/RedTeaming/PostCompomise/📖Windows Local Persistance.md",
+    "TRYHACKME/RandomROOMS/n8n.md",
+    "TRYHACKME/RandomROOMS",
+    "TRYHACKME/RedTeaming/Initial Access/📖Waponization.md",
+    "TRYHACKME/RedTeaming/Initial Access/📖Password Attack.md",
+    "TRYHACKME/JR Penetration Tester/Network Security/📖Nmap Post Port Scans.md",
+    "TRYHACKME/JR Penetration Tester/Privilege Escalation/📖Linux Privilege Escalation.md",
+    "TRYHACKME/Cyber Security  101/Exploitation Basics/✉️Metasploit Exploitation.md",
+    "TRYHACKME/RedTeaming/PostCompomise/📖Enumeration.md",
+    "Pasted image 20250819185301.png",
+    "Pasted image 20250819185322.png",
+    "Pasted image 20250819185235.png",
+    "Pasted image 20250819184102.png",
+    "Pasted image 20250819145526.png",
+    "Pasted image 20250818183036.png",
+    "TRYHACKME/RedTeaming/PostCompomise/📖The lay of the land.md",
+    "TRYHACKME/🧠TRYHACKME.md",
+    "TRYHACKME/RedTeaming/Initial Access/🧑‍💻Initial Access.md",
+    "TRYHACKME/RedTeaming/PostCompomise/🧑‍💻Post Compromise.md",
+    "TRYHACKME/RedTeaming/PostCompomise",
+    "TRYHACKME/RedTeaming/Initial Access",
+    "TRYHACKME/RedTeaming/Red Teaming Fundamentals",
+    "TRYHACKME/RedTeaming",
+    "TRYHACKME/Web Application Pentesting/Injection Attacks",
+    "TRYHACKME/Web Application Pentesting/Authentication",
+    "TRYHACKME/Web Application Pentesting",
+    "TRYHACKME/WebFundamental",
+    "images/GRAFIC TRYHACKME.canvas"
+  ]
+}
